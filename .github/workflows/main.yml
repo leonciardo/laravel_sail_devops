@@ -10,7 +10,7 @@ jobs:
     name: connect_ssh
     runs-on: ubuntu-latest
     environment:
-      name: Produccion 
+      name: staging 
     steps:
     - name: executing remote ssh commands using password
       uses: appleboy/ssh-action@v1.0.2
