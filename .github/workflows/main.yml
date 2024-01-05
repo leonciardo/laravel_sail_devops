@@ -26,6 +26,7 @@ jobs:
             sudo apt install composer -y
             sudo rm -rf laravel_sail_devops
             sudo apt install --no-install-recommends php8.1 -y
+            sudo apt install php8.1-xml -y
             git clone https://github.com/gastonbarbaccia/laravel_sail_devops.git
             cd laravel_sail_devops
             composer update
