@@ -32,5 +32,3 @@ jobs:
             cd laravel_sail_devops
             composer update
             composer install
-
-
