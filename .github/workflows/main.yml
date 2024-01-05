@@ -22,7 +22,7 @@ jobs:
         script: |
             sudo apt-get update && sudo apt-get upgrade -yy
             sudo apt-get install docker.io -y
-            sudo apt-get install compose -y
+            sudo apt-get install docker-compose -y
             sudo apt install composer -y
             git clone https://github.com/gastonbarbaccia/laravel_sail_devops.git
             cd laravel_sail_devops
