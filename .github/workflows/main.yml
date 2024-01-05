@@ -7,13 +7,13 @@ on:
 
 jobs:
   connection_ssh:
-    - name: executing remote ssh commands using password
-      uses: appleboy/ssh-action@v1.0.2
-      environment:
-        name: staging 
-      with:
-        host: ${{ secrets.HOST }}
-        username: ${{ secrets.USERNAME }}
-        password: ${{ secrets.PASSWORD }}
-        port: ${{ secrets.PORT }}
-        script: whoiam
+    name: executing remote ssh commands using password
+    uses: appleboy/ssh-action@v1.0.2
+    environment:
+      name: staging 
+    with:
+      host: ${{ secrets.HOST }}
+      username: ${{ secrets.USERNAME }}
+      password: ${{ secrets.PASSWORD }}
+      port: ${{ secrets.PORT }}
+      script: whoiam
