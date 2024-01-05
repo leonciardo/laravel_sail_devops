@@ -10,13 +10,13 @@ jobs:
     name: connect_ssh
     runs-on: ubuntu-latest
     environment:
-      name: staging 
+      name: Produccion 
     steps:
     - name: executing remote ssh commands using password
       uses: appleboy/ssh-action@v1.0.2
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
-        password: ${{ secrets.PASSWORD }}
+        key: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
         script: whoami
