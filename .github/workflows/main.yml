@@ -19,4 +19,5 @@ jobs:
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
-        script: whoami
+        script: |
+            sudo apt-get update && sudo apt-get upgrade -yy
