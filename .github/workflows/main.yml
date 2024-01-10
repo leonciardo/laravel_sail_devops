@@ -32,3 +32,5 @@ jobs:
             cd laravel_sail_devops
             composer update
             composer install
+            cp .env.example .env
+            php artisan key:generate
