@@ -34,4 +34,7 @@ jobs:
             composer install
             cp .env.example .env
             php artisan key:generate
-            ./vendor/bin/sail up -d
+            sudo ./vendor/bin/sail up -d
+
+#sail contenedor
+#chmod -R 777 storage/
