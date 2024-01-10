@@ -37,4 +37,6 @@ jobs:
             sudo ./vendor/bin/sail up -d
 
 #sail contenedor
+#----------------------------------
+#sudo docker exec -it "nombre" bash
 #chmod -R 777 storage/
