@@ -10,7 +10,7 @@ jobs:
     name: connect_ssh
     runs-on: ubuntu-latest
     environment:
-      name: staging 
+      name: staging
     steps:
     - name: executing remote ssh commands using password
       uses: appleboy/ssh-action@v1.0.2
@@ -40,3 +40,4 @@ jobs:
 #----------------------------------
 #sudo docker exec -it "nombre" bash
 #chmod -R 777 storage/
+#voy a hacer un commit de prueba a ver si funciona
